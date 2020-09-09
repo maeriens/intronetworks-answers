@@ -1,0 +1,94 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  display: inline-block;
+  margin-right: 40px;
+}
+table, th, td {
+   border: 1px solid black;
+}
+p {
+  margin-bottom: 0;
+}
+
+pre.highlight {
+  background-color: silver;
+  display: inline-block;
+  padding: 24px 24px 8px;
+  margin: 16px 0;
+}
+
+.content {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+.sidebar {
+  background-color: #c0c0c0;
+  width: 15%;
+}
+
+.sidebar__content {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.main {
+  margin: 24px;
+}
+
+.result {
+  width: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+input.uppercased {
+  text-transform: uppercase;
+}
+
+td.error {
+  background-color: red;
+}
+
+td.ok {
+  background-color: green;
+}
+
+td.warn {
+  background-color: rgb(255, 238, 0);
+}
+
+.mine {
+  font-style: italic;
+  padding: 4px;
+  margin: 2px 0 6px 0;
+  border: 1px dashed grey;
+;
+}
+
+.exercise_image {
+  background-color: silver;
+  display: inline-block;
+  margin: 16px 0;
+}
+
+.text_answer_container {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px;
+  border: 1.5px solid silver;
+}
+
+

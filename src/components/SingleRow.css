@@ -1,0 +1,12 @@
+.single_answer {
+  width: 32px;
+}
+
+.single_answer_check {
+  font-weight: bold;
+  width: 30px;
+}
+
+.buttons_wrapper button {
+  margin-right: 24px;
+}
