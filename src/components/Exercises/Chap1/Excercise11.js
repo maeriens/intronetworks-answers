@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Table from '../../Table';
-import StaticTable from '../../StaticTable';
+import React from 'react';
 import Hint from '../../Hint';
-import SingleRow from '../../SingleRow';
-import Exercise11Table from '../../Exercise11Table';
+import Exercise11Table from '../../Exercise1_11Table';
 
 
 function Excercise11() {
-  const [aValues, setAnswerA] = useState({ first: '', second: '', weight: '' });
-  const [checkA, setCheckA] = useState(false);
-
-  const setAValues = ({ target }) => {
-    const { name, value } = target;
-    const actualValue = typeof value === 'number' ? value : value.toUpperCase();
-    setAnswerA(prevState => ({ ...prevState, [name]: actualValue }))
-  }
-  // const checkA = () => {
-  //   const { first, second, weight } = aValues;
-  //   if (first === second || weight != '4') return 'error';
-  // }
-
   return (
     <div id="11">
       <div>
@@ -44,7 +28,7 @@ S3─────S6─────S12──C──D──F`}
           from (b); there is no assignment of weights that can account for both routes.
         </Hint>
         <Hint>
-          For both cases, there are two links that need to be 'heavier' as to avoid them. As a nice extra, I also ask for the <em>minimum</em>
+          For both cases, there are two links that need to be 'heavier' as to avoid them. As a nice extra, I also ask for the <em>minimum </em>
           weight they must have for them to be ignored.
          </Hint>
 

@@ -34,6 +34,7 @@ pre.highlight {
 .sidebar {
   background-color: #c0c0c0;
   width: 15%;
+  min-height: 100vh;
 }
 
 .sidebar__content {

@@ -59,8 +59,10 @@ const Exercise11Table = ({ data }) => {
       </table>
       <button onClick={runChecks}>Check</button>
       <button onClick={() => setShowAnswers(true)}>Show Answers</button>
-      {showAnswers && <p>First switches are {data[0].switches.join('.')}, minimum weight is {data[0].weight}</p>}
-      {showAnswers && <p>Second switches are {data[1].switches.join('.')}, minimum weight is {data[1].weight}</p>}
+      <div>
+        {showAnswers && <p>First switches are {data[0].switches.join('. ')}, minimum weight is {data[0].weight}.</p>}
+        {showAnswers && <p>Second switches are {data[1].switches.join('. ')}, minimum weight is {data[1].weight}.</p>}
+      </div>
     </Fragment>
   )
 }
